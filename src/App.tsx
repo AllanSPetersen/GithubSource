@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Perfil from './pages/Perfil';
 import Repositorio from './pages/Repositorio';
 import Footer from './components/Footer';
+import RepositoriosF from './pages/RepositoriosF';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Perfil />}/>
         <Route path="/:usuario" element={<Perfil />}/>
-        <Route path="/:usuario/:repositorio" element={<Repositorio />}/>
+        <Route path="/:usuario/:nomerepositorio" element={<Repositorio />}/>
+        <Route path="/:usuario/:usuario/:repositoriof" element={<RepositoriosF />}/>
       </Routes>
 
       <Footer />

@@ -9,8 +9,7 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-export const Main = styled.div`
-  justify-content: flex-start;
+export const SMain = styled.main`
   display: flex;
   flex-direction: column;
 
@@ -40,6 +39,7 @@ export const RightSide = styled.div`
 
 export const Repositorio = styled.div `
     margin-top: var(--verticalPadding);
+    
 
 > h2 {
   font-size: 16px;
@@ -78,6 +78,11 @@ export const Tab = styled.div`
     border-bottom: 2px solid var(--orange);
 
     .label {
+      font-size: 14px;
+      padding: 0 7px;
+      font-weight: 600;
+    }
+    .Link {
       font-size: 14px;
       padding: 0 7px;
       font-weight: 600;

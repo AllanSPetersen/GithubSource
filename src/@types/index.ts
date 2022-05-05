@@ -22,3 +22,16 @@ export interface APIRepo {
     language?: string;
     description?: string;
 }
+
+export interface APIRepoF {
+    map(arg0: (item: any) => JSX.Element): import("react").ReactNode;
+    name: string;
+    owner: {
+        login: string;
+    };
+    stargazers_count: number;
+    forks: number;
+    html_url: string;
+    language?: string;
+    description?: string;
+}
